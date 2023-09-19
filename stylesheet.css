@@ -119,28 +119,6 @@ body {
     height: auto;
 }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 600px) {
-    /* Adjust styles for small screens */
-    .header {
-        /* ... */
-    }
-    .navbar a {
-        /* ... */
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Adjust styles for medium screens */
-    /* ... */
-}
-
-@media screen and (min-width: 1025px) {
-    /* Adjust styles for large screens */
-    /* ... */
-}
-
-
 /* Styling for the intro section */
 .intro-content {
     padding: 50px 10%;
@@ -237,4 +215,64 @@ body {
     text-align: center;
     font-size: 64px;
     color:#8C1d40;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    /* iPhone 13 Pro screen width is 375px */
+
+    /* Adjust header styles for small screens */
+    .header {
+        padding: 10px 5%; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust navigation links for small screens */
+    .navbar a {
+        font-size: 18px; /* Decrease font size for navigation links */
+        margin-left: 15px; /* Increase margin for better spacing */
+    }
+
+    /* Adjust home content heading styles for small screens */
+    .home-content h1 {
+        font-size: 28px; /* Decrease font size for headings */
+        line-height: 50px; /* Adjust line height */
+    }
+
+    /* Adjust home content subheading styles for small screens */
+    .home-content h3 {
+        font-size: 20px; /* Decrease font size for subheadings */
+        margin-bottom: 15px; /* Adjust margin for better spacing */
+    }
+
+    /* Adjust text styles for small screens */
+    .text {
+        font-size: 24px; /* Decrease font size for text */
+    }
+
+    /* Adjust intro section padding for small screens */
+    .intro-content {
+        padding: 30px 5%; /* Adjust padding for smaller screens */
+    }
+
+    /* Adjust intro heading styles for small screens */
+    .intro-content h2 {
+        font-size: 30px; /* Decrease font size for headings */
+    }
+
+    /* Adjust intro subheading styles for small screens */
+    .intro-content h3 {
+        font-size: 18px; /* Decrease font size for subheadings */
+        font-weight: 500; /* Adjust font weight */
+        margin-top: 20px; /* Adjust margin for better spacing */
+        margin-bottom: 10px; /* Adjust margin for better spacing */
+    }
+
+    /* Adjust intro paragraph styles for small screens */
+    .intro-content p {
+        font-size: 16px; /* Decrease font size for text */
+        line-height: 24px; /* Adjust line height */
+        margin-bottom: 20px; /* Adjust margin for better spacing */
+    }
+
+    /* Additional adjustments for other sections and elements as needed */
 }
