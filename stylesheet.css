@@ -1,4 +1,4 @@
-/* Your existing CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +8,13 @@
 
 body {
     color: #ededed;
-    background-color: #000;
+    background: linear-gradient(#000000, #000080); /* Replace with your desired gradient colors */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
 }
+
 
 .header {
     position: fixed;
@@ -27,7 +32,7 @@ body {
 .logo {
     position: relative;
     font-size: 25px;
-    color: #ffc627;
+    color: #7DF9FF;
     text-decoration: none;
     font-weight: 600;
     cursor: default;
@@ -42,7 +47,7 @@ body {
 .navbar a {
     display: inline-block;
     font-size: 25px;
-    color: #ffc627;
+    color: #7DF9FF;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -87,7 +92,7 @@ body {
 }
 
 .home-content h1 span {
-    color: #ffc627;
+    color: #7DF9FF;
     font-weight: 600;
 }
 
@@ -101,7 +106,7 @@ body {
 }
 
 .text {
-    color: #ffc627;
+    color: #7DF9FF;
     font-size: 30px;
 }
 
@@ -125,14 +130,14 @@ body {
 }
 
 .intro-content h2 {
-    color: #ffc627; /* Heading color */
+    color: #7DF9FF; /* Heading color */
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .intro-content h3 {
-    color: #ffc627; /* Heading color */
+    color: #7DF9FF; /* Heading color */
     font-size: 24px;
     font-weight: 500;
     margin-top: 40px;
@@ -294,4 +299,10 @@ body {
             display: none; /* Hide regular navigation links */
     }
     
+}
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the background color and opacity as needed */
+    padding: 200px; /* Add padding to create a margin around the text content */
+    border-radius: 10px; /* Add rounded corners for the container */
+    margin: 100px; /* Add margin to separate it from other content */
 }
