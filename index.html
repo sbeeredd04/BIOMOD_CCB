@@ -12,7 +12,6 @@
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 </head>
 <body>
-    <script src="js.js"></script> <!-- Place this at the end of the body -->
     <header class="header">
         <a href="#" class="logo">Cargo <span>Code Breakers</span></a>
         <nav class="navbar">
@@ -26,13 +25,15 @@
 
     <section class="home" id="home">
         <div class="home-content">
-            <h1>The <span class = "other">Transporter</span></h1>
+            <h1>The <span class = "other">Cargo Sorting DNA</span></h1>
 
         </div>
 
-        <div class="image-container">
-            <img src="cargosorting sample image.jpeg" alt="DNA Robot" class="home-image">
-        </div>
+        <div id="container3D"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/jsm/controls/OrbitControls.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/jsm/loaders/GLTFLoader.min.js"></script>
+        <script src="main.js"></script>
         
     </section>
 

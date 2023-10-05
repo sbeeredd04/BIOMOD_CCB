@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-    <script src="js.js"></script> <!-- Place this at the end of the body -->
+    <script src="main.js"></script> <!-- Place this at the end of the body -->
     <header class="header">
         <a href="#" class="logo">Cargo <span>Code Breakers</span></a>
         <nav class="navbar">
@@ -29,48 +29,49 @@
         </nav>
     </header>
 
+    <div class = "project-title">
+        <h1>Project Details</h1>
+    </div>
+    <div class = "container">
      <!-- section for project details-->
-     <section class = "project">
-        <!-- Title project in the center of the page-->
-        <div class = "project-title">
-            <h1>Project Details</h1>
-        </div>
-        <div class = "Background">
-            <h3>Background</h2>
-            <p>
-                The design of our cargo-sorting DNA robot was inspired by the work of Lulu Qian, Erik Winfree, and co-workers, who in 2017 demonstrated the first DNA-based robot. Here, a DNA-based robot traversed a DNA origami track constructed with alternating track types in a random walk. The robot’s role was to sort two different types of cargo and deliver them to “goal” strands.
-            </p>
-            </h3>
-        </div>
-
-        <div class = "project-content">
-
-            <h2>Anatomy of the Robot</h2>
-            <p>
-                The DNA robot itself was a single-stranded DNA of length 53 nucleotides, segmented into 6 sections. From base to top, the robot had a docking strand, foot #1, a leg, foot #2, an arm, and a hand. Each section consisted of a distinct DNA sequence to ensure highly targeted binding when the robot encountered strands complementary to its own “body parts”. Through the creation of unique parts each with a specific purpose, we were able to ensure that the robot could carry out tasks in the desired manner. For instance, the leg and feet of the robot facilitated its movement, while the arm and hand provided a mechanism for the robot to pick up and drop cargo. In this manner, the entirety of the robot served crucial roles in the process of sorting cargo.
-            </p>
-
-            <h2>Initial Condition of the Robot</h2>
+        <section class = "project">
+            <div class = "Background">
+                <h3>Background</h2>
                 <p>
-                    Prior to the addition of the robot to the system, the robot was inhibited to the start staple. This was necessary to confirm that only one robot would bind to a given origami track, thus preventing aggregation of multiple robots on a single origami. The inhibitor strand possessed a hand*, arm* and a foot* complement, thereby binding to relevant parts of the robot. On the addition of a trigger strand, complementary to the inhibitor, into the system, the inhibitor dissociated to the trigger, thus permitting the robot to begin its motion along the track.
+                    The design of our cargo-sorting DNA robot was inspired by the work of Lulu Qian, Erik Winfree, and co-workers, who in 2017 demonstrated the first DNA-based robot. Here, a DNA-based robot traversed a DNA origami track constructed with alternating track types in a random walk. The robot’s role was to sort two different types of cargo and deliver them to “goal” strands.
+                </p>
+                </h3>
+            </div>
+
+            <div class = "project-content">
+
+                <h2>Anatomy of the Robot</h2>
+                <p>
+                    The DNA robot itself was a single-stranded DNA of length 53 nucleotides, segmented into 6 sections. From base to top, the robot had a docking strand, foot #1, a leg, foot #2, an arm, and a hand. Each section consisted of a distinct DNA sequence to ensure highly targeted binding when the robot encountered strands complementary to its own “body parts”. Through the creation of unique parts each with a specific purpose, we were able to ensure that the robot could carry out tasks in the desired manner. For instance, the leg and feet of the robot facilitated its movement, while the arm and hand provided a mechanism for the robot to pick up and drop cargo. In this manner, the entirety of the robot served crucial roles in the process of sorting cargo.
                 </p>
 
-            <h2>Track Type</h2>
-            <p>
-                In order to facilitate the constant movement of the robot, it was necessary to construct two different track types. The track types differed solely in terms of the position of the feet and legs; track type #1 had a leg* and foot* respectively, while track type #2 had a foot* followed by a leg*. The tracks were laid out along the origami such that they constantly alternated. By having different arrangements of the legs and feet, the tracks allowed the robot to seamlessly transition between the two track types and continue its random walk without obstruction.
-            </p>
+                <h2>Initial Condition of the Robot</h2>
+                    <p>
+                        Prior to the addition of the robot to the system, the robot was inhibited to the start staple. This was necessary to confirm that only one robot would bind to a given origami track, thus preventing aggregation of multiple robots on a single origami. The inhibitor strand possessed a hand*, arm* and a foot* complement, thereby binding to relevant parts of the robot. On the addition of a trigger strand, complementary to the inhibitor, into the system, the inhibitor dissociated to the trigger, thus permitting the robot to begin its motion along the track.
+                    </p>
 
-            <h2>Motion of the Robot</h2>
-            <p>
-                The motion of the robot can be compared to that of a domino chain reaction; by pushing the top of one, the rest of the domino is compelled to follow. The diagram below represents the robot’s motion by demonstrating how it moves from one track type to another. Initially, foot #1 and the leg are bound to their complements, while foot #2 remains free. However, foot #2 begins to bind to its complement on the second track type, and the leg and foot #1 are compelled to follow. Essentially, by constantly having one foot of the robot unbound, we were able to allow the robot to constantly continue its random walk. The robot will be fully incapacitated once it reaches the goal strand, where all its feet and its leg will be bound to their respective complements, creating a stable complex.
-            </p>
-            <iframe class= "robotMotion" width="560" height="315" src="https://www.youtube.com/embed/sS9dMQnmG0Q?si=tyHY6i0xfqqhYGHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h2>Track Type</h2>
+                <p>
+                    In order to facilitate the constant movement of the robot, it was necessary to construct two different track types. The track types differed solely in terms of the position of the feet and legs; track type #1 had a leg* and foot* respectively, while track type #2 had a foot* followed by a leg*. The tracks were laid out along the origami such that they constantly alternated. By having different arrangements of the legs and feet, the tracks allowed the robot to seamlessly transition between the two track types and continue its random walk without obstruction.
+                </p>
 
-            <h2>Transporting Cargo</h2>
-            <p>
-                As outlined earlier, the robot was designed with the purpose of transporting cargo across the DNA origami track. The cargo is a single-stranded DNA partitioned into four parts - the cargo identifier, an arm* complement, a hand* complement and a goal attacher*. The identifier allows the cargo to be recognized by the goal, while the arm* and hand* allow the cargo to be picked up by the robot. The goal attacher’s role is to bind the cargo to the goal strand. As the robot carries out its random walk, it meets the cargo along its path. The hand and the arm of the robot bind to their complements on the cargo, and the robot is now bound with cargo. The robot continues with its walk until it bumps into the designated cargo goal strand. Hence, the cargo’s hand*, arm* and identifier bind to the goal strand, indicating that the cargo has been deposited at the desired strand. The cargo is designed such that it has the capacity to carry molecules, augmenting its potential for use in drug delivery in medicine and other related fields. 
-            </p>
+                <h2>Motion of the Robot</h2>
+                <p>
+                    The motion of the robot can be compared to that of a domino chain reaction; by pushing the top of one, the rest of the domino is compelled to follow. The diagram below represents the robot’s motion by demonstrating how it moves from one track type to another. Initially, foot #1 and the leg are bound to their complements, while foot #2 remains free. However, foot #2 begins to bind to its complement on the second track type, and the leg and foot #1 are compelled to follow. Essentially, by constantly having one foot of the robot unbound, we were able to allow the robot to constantly continue its random walk. The robot will be fully incapacitated once it reaches the goal strand, where all its feet and its leg will be bound to their respective complements, creating a stable complex.
+                </p>
+                <iframe class= "robotMotion" width="560" height="315" src="https://www.youtube.com/embed/sS9dMQnmG0Q?si=tyHY6i0xfqqhYGHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-        </div>
+                <h2>Transporting Cargo</h2>
+                <p>
+                    As outlined earlier, the robot was designed with the purpose of transporting cargo across the DNA origami track. The cargo is a single-stranded DNA partitioned into four parts - the cargo identifier, an arm* complement, a hand* complement and a goal attacher*. The identifier allows the cargo to be recognized by the goal, while the arm* and hand* allow the cargo to be picked up by the robot. The goal attacher’s role is to bind the cargo to the goal strand. As the robot carries out its random walk, it meets the cargo along its path. The hand and the arm of the robot bind to their complements on the cargo, and the robot is now bound with cargo. The robot continues with its walk until it bumps into the designated cargo goal strand. Hence, the cargo’s hand*, arm* and identifier bind to the goal strand, indicating that the cargo has been deposited at the desired strand. The cargo is designed such that it has the capacity to carry molecules, augmenting its potential for use in drug delivery in medicine and other related fields. 
+                </p>
 
-    </section>
+            </div>
+
+        </section>
+    </div>
