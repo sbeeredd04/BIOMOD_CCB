@@ -19,7 +19,19 @@
 <body>
     <script src="main.js"></script> <!-- Place this at the end of the body -->
     <header class="header">
-        <a href="#" class="logo">Cargo <span>Code Breakers</span></a>
+        <div class = "cube-container">
+            <a href="#" class="logo">Cargo <span>Code Breakers</span></a>
+            <div class="cube-loader">
+                <div class="cube-top"></div>
+                <div class="cube-wrapper">
+                <span style="--i:0" class="cube-span"></span>
+                <span style="--i:1" class="cube-span"></span>
+                <span style="--i:2" class="cube-span"></span>
+                <span style="--i:3" class="cube-span"></span>
+                </div>
+            </div>
+        </div>
+
         <nav class="navbar">
             <a href="index.html" class="active">Home</a>
             <a href="intro.html" class="active">Introduction</a>
