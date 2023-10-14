@@ -407,54 +407,137 @@ body {
     margin: 0 auto;
     padding: 20px;
     margin-top:50px;
-  }
+}
   
   /* Styling for .excel-container */
-  .excel-container {
+.excel-container {
     text-align: center;
     margin: 20px 0;
-  }
+}
   
   /* Styling for .excel-file */
-  .excel-file {
+.excel-file {
     margin: 10px;
     background: #130d30;
     border: none;
     width: 100%; /* You can adjust the width as needed */
     height: auto; /* Adjust the height as needed or remove it for the default height */
-  }
+}
   
   /* Styling for h1 and p inside each container */
-  .experiments h2,
+.experiments h2,
   .origami-map h2,
   .aliquoting-strands h2,
   .mixing-protocol h1,
   .annealing-protocol h1,
   .purification-protocol h1,
   .flow-protocol h1,
-  .imaging-protocol h1 {
+  .imaging-protocol h1, 
+  .introduction-content-1 h1, 
+  .synthesis-content h1{
     color: #bbb0ff;
     font-size: 24px;
     font-weight: 540px;
     margin-top: 40px;
     margin-bottom: 15px;
-  }
+}
   
-  .experiments p,
+.experiments p,
   .origami-map p,
   .aliquoting-strands p,
   .mixing-protocol p,
   .annealing-protocol p,
   .purification-protocol p,
   .flow-protocol p,
-  .imaging-protocol p {
+  .imaging-protocol p,
+  .flow-protocol ul,
+  .introduction-content-1 p, 
+  .synthesis-content p{
     color: #fff;
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 30px;
-  }
+}
 
-  .experiments {
+.experiments {
     padding: 50px 10%;
-  }
+}
+
+.annealing-table {
+    border: 1px solid #fff; /* White border for the table */
+    border-collapse: collapse; /* Collapse cell borders */
+    width: 50%; /* Make the table 100% width of its container */
+    margin: 20px; /* Add margin above the table */
+}
+
+/* Style for table cells (td) */
+.annealing-table td {
+    border: 1px solid #fff; /* White border for table cells */
+    padding: 10px; /* Add padding to cell content */
+}
+
+/* Center the text within table cells horizontally and vertically */
+.annealing-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
   
+
+.flow-tables { 
+    display: flex; /* Horizontal layout */
+    flex-wrap: wrap; /* Allow tables to wrap to next row */
+    justify-content: center; /* Center tables horizontally */
+    margin: 20px 0; /* Add margin between tables */
+}
+  /* Apply styling to tables with class "flow-table" */
+.flow-table {
+    border: 1px solid #fff; /* White table border */
+    margin: 20px; /* Margin between tables */
+    float: left; /* Horizontal layout */
+    width: 300px; /* Table width */
+    height: 150px; /* Table height */
+    border-collapse: collapse;
+}
+
+/* Add margin between table cells (columns) */
+.flow-table td {
+    border: 1px solid #fff; /* White border for table cells */
+    text-align: center; /* Center the content horizontally */
+    vertical-align: middle;
+}
+
+/* Center the entire 'flow-table-container' div in the middle of the page */
+.flow-table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Style for the table */
+.flow-table-1 {
+    border: 1px solid #fff; /* White border for the table */
+    border-collapse: collapse; /* Collapse cell borders */
+    width: 50%; /* Make the table 100% width of its container */
+    margin-top: 20px; /* Add margin above the table */
+}
+
+/* Style for table cells (td) */
+.flow-table-1 td {
+    border: 1px solid #fff; /* White border for table cells */
+    padding: 10px; /* Add padding to cell content */
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* Style for table headers (th) */
+.flow-table-1 th {
+    background-color: #130d30; /* Gray background for table headers */
+    padding: 10px; /* Add padding to header cells */
+}
+
+/* Optional
