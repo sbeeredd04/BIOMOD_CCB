@@ -506,6 +506,9 @@ body {
     text-align: center; /* Center the content horizontally */
     vertical-align: middle;
 }
+.flow-table th {
+    background-color: #130d30; /* Gray background for table headers */
+}
 
 /* Center the entire 'flow-table-container' div in the middle of the page */
 .flow-table-container {
