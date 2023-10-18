@@ -452,7 +452,10 @@ body {
   .imaging-protocol p,
   .flow-protocol ul,
   .introduction-content-1 p, 
-  .synthesis-content p{
+  .synthesis-content p,
+  .version-1 p, .version-2 p,
+  .version-3 p,.version-4 p,
+  .version-5 p{
     color: #fff;
     font-size: 18px;
     line-height: 28px;
@@ -543,4 +546,36 @@ body {
     padding: 10px; /* Add padding to header cells */
 }
 
-/* Optional
+
+.results-title {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 32px;
+    color:#bbb0ff;
+}
+
+.results {
+    padding: 50px 10%;
+}
+
+.results .results-content h1{
+    color: #bbb0ff;
+    font-size: 32px;
+    font-weight: 540px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.results .results-content h2 {
+    color: #bbb0ff;
+    font-size: 24px;
+    font-weight: 540px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.results .results-content p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
