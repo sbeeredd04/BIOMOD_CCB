@@ -744,3 +744,93 @@ button {
     line-height: 28px;
     margin-bottom: 40px;
 }
+
+.team-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Place elements side by side */
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.team-display h1 {
+    color: #fff;
+    flex: 1; /* Take up 50% of the available space */
+    font-size: 40px;
+    font-weight: 250;
+    line-height: 70px;
+    margin-right: 10px;
+    padding-top: 10%;
+  }
+  
+  .team-display h1{
+    color: #bbb0ff;
+    font-weight: 600;
+}
+  
+  .team-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styling for the home content text */
+  .team-content h1 {
+    color: #fff;
+    flex: 1; /* Take up 50% of the available space */
+    font-size: 40px;
+    font-weight: 250;
+    line-height: 70px;
+    margin-right: 10px;
+    padding-top: 10%;
+  }
+  
+  .team-content h1 span {
+    color: #bbb0ff;
+    font-weight: 600;
+  }
+  
+  .team-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member-card {
+    flex: 1;
+    max-width: 250px; /* Set a maximum width for the cards */
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .team-member-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .acknowledgements {
+    padding: 50px 10%;
+    text-align: center;
+  }
+
+  .acknowledgements h1 {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 32px;
+    color:#bbb0ff;
+  }
+  .acknowledgements p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
