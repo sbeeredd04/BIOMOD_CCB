@@ -816,6 +816,14 @@ button {
     border-radius: 50%;
     margin-bottom: 10px;
   }
+
+  .team-member-card:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed for the desired zoom effect */
+    transition: transform 0.3s; /* Add a smooth transition for the zoom effect */
+    z-index: 1; /* Ensure that the zoomed card is on top of other cards when hovered */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); /* Adjust box shadow for the zoomed card */
+}
+
   
   .acknowledgements {
     padding: 50px 10%;
