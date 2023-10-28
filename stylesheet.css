@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: comic sans ms;
 }
 
 body {
@@ -497,7 +497,7 @@ body {
     vertical-align: middle;
 }
 .flow-table th {
-    background-color: #130d30; /* Gray background for table headers */
+    background-color: transparent; /* Gray background for table headers */
 }
 
 /* Center the entire 'flow-table-container' div in the middle of the page */
@@ -577,7 +577,7 @@ body {
     color: #fff;
     display: flex;
     align-items: center;
-    border: 10px solid #bbb0ff;
+    border: 2px solid #bbb0ff;
     border-radius: 5px;
     justify-content: center;
     font-size: 24px;
@@ -588,7 +588,7 @@ body {
     color: #fff;
     display: flex;
     align-items: center;
-    border: 5px solid #bbb0ff;
+    border: 2px solid #bbb0ff;
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
