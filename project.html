@@ -43,47 +43,152 @@
     </header>
 
     <div class = "project-title">
-        <h1>Project Details</h1>
+        <h1>Methods & Design</h1>
     </div>
     <div class = "container">
      <!-- section for project details-->
         <section class = "project">
             <div class = "Background">
-                <h3>Background</h2>
+                <h2>DNA Paint</h2>
                 <p>
-                    The design of our cargo-sorting DNA robot was inspired by the work of Lulu Qian, Erik Winfree, and co-workers, who in 2017 demonstrated the first DNA-based robot. Here, a DNA-based robot traversed a DNA origami track constructed with alternating track types in a random walk. The robot’s role was to sort two different types of cargo and deliver them to “goal” strands.
+                    While conventional methods of imaging DNA origami, such as the use of AFM microscopy, have allowed us to view our structures as they form on the nanoscale, we decided to use DNA-PAINT, a novel imaging technique. A key limiting factor in super-resolution microscopy is the diffraction limit, which is the point at which two individual points can no longer be distinguished from each other. Through the use of short oligonucleotides conjugated to fluorophores, DNA-PAINT is capable of bypassing this diffraction limit, thus offering higher resolution, on the scale of 1nm. 
                 </p>
-                </h3>
+
+                <p>
+                    Achieving imaging through DNA-PAINT requires the use of a docking strand, which is located on the strands of interest, and imager strands, which are shorter strands containing fluorescent dyes. The choice of dye depends solely on the user; for our project, we decided to use the Cy3b dye, with an excitation wavelength of 560 nm and an emission wavelength of 572 nm. DNA-PAINT relies on the transient binding of these imager strands to their respective docking strands. Upon flowing in these imager strands in excess to the origami, they freely spread throughout the sample, locating their complementary strands.
+                </p>
+
+                <div class = "image-container">
+                    <img src="image2.png" alt="DNA Structure">
+                    <div class = "image-caption">
+                        <p> <span class = "figure">Figure 1:</span> Schematic representation of the two possible states during DNA-PAINT. Imager strands are flowed in, and bind to their complementary docking strands for a short period of time. Image made in BioRender.</p>
+                    </div>
+                </div>
+
+                <p>
+                    During the period in which the imager strands bind to the dockings, the microscope collects the photons emitted as a result of the binding. In this way, we can achieve high localization with regard to the location of each docking strand in the origami. For our csDNA, we decided to have 7 fiduciary markers arranged around the origami track, thereby allowing us to locate our individual origami. We also added a docking strand to the robot itself to track its motion during the random walk.
+                </p>
+
+                <div class = "image-container">
+                    <img src="image3.png" alt="DNA Structure">
+                    <div class = "image-caption">
+                        <p> <span class = "figure">Figure 2: A</span> The layout of fiduciary markers on our csDNA. We wanted to ensure that each fiduciary marker was at least 20nm apart from the next, allowing us to clearly distinguish the individual markers. We also kept the bottom of the origami empty so that we could prevent symmetry in the structure, allowing us to know the orientation of the origami at any point. B DNA-PAINT image of the 20nm grid. Fiduciary markers are arranged in a 4x3 manner. Using DNA-PAINT, every fiduciary marker is clearly visible. Image made in BioRender.</p>
+                    </div>
+                </div>
+
             </div>
 
             <div class = "project-content">
 
-                <h2>Anatomy of the Robot</h2>
+                <h2>Design Introduction</h2>
+
                 <p>
-                    The DNA robot itself was a single-stranded DNA of length 53 nucleotides, segmented into 6 sections. From base to top, the robot had a docking strand, foot #1, a leg, foot #2, an arm, and a hand. Each section consisted of a distinct DNA sequence to ensure highly targeted binding when the robot encountered strands complementary to its own “body parts”. Through the creation of unique parts each with a specific purpose, we were able to ensure that the robot could carry out tasks in the desired manner. For instance, the leg and feet of the robot facilitated its movement, while the arm and hand provided a mechanism for the robot to pick up and drop cargo. In this manner, the entirety of the robot served crucial roles in the process of sorting cargo.
+                    In 2006, Paul Rothemund first demonstrated his scaffold method of DNA origami, in which he took a single DNA strand and folded it into a desired shape. In the 17 years that have passed, scientists have continued to develop structures with possible applications across medicine and optics. Here, we discuss the process of designing DNA origami, from designing a structure to outputting it for testing in a lab setting.
                 </p>
 
-                <h2>Initial Condition of the Robot</h2>
+                <div class = "image-container">
+                    <img src="image4.png" alt="DNA Structure">
+                    <div class = "image-caption">
+                        <p> <span class = "figure">Figure 3:</span> The first row shows diagrams of the desired structures. The colors indicate the index of each base pair in the folding process, with red being the first bases to fold while purple is the last. The second row shows AFM images captured by Paul Rothemund. The remarkable specificity and programmability of DNA is the reason we selected it as the medium for our project. Images taken from Rothemund, 2006.</p>
+                    </div>
+                </div>
+
+                <h2>CADNANO</h2>
                     <p>
-                        Prior to the addition of the robot to the system, the robot was inhibited to the start staple. This was necessary to confirm that only one robot would bind to a given origami track, thus preventing aggregation of multiple robots on a single origami. The inhibitor strand possessed a hand*, arm* and a foot* complement, thereby binding to relevant parts of the robot. On the addition of a trigger strand, complementary to the inhibitor, into the system, the inhibitor dissociated to the trigger, thus permitting the robot to begin its motion along the track.
+                        In order to construct our csDNA for its eventual construction and imaging, we used caDNAno, an open-source software package created by Shawn Douglas and co-workers in 2009. CaDNAno (www.cadnano.org) presents the user with an intuitive interface intended to ease the process of constructing DNA origami. Users arrange DNA helices on a hexagonal or square lattice. Scaffold strands on the path panel may then be extended or shortened to achieve the desired dimensions, and they are then linked by crossovers to ensure a continuous and cohesive structure.
                     </p>
 
-                <h2>Track Type</h2>
+                    <div class = "image-container">
+                        <img src="image5.png" alt="DNA Structure">
+                        <div class = "image-caption">
+                            <p> <span class = "figure">Figure 4:</span> a The slice panel of caDNAno. Users may arrange double helices on a honeycomb or square lattice. b The path panel, where users may edit their scaffold and staple strand arrangements. Upon designing the structure of their choice, caDNAno will generate sequences for all strands in the design based on the inputted M13 sequence.</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        To fold the scaffold strand in the desired manner, staple strands can be added. These staple strands have an optimal length of 18 to 49 base pairs; a significant departure from this length may lead to a failure when attempting to fold the origami. Base pair insertions and deletions can also be made to control the flexibility and bending ability of the structure. Upon arriving at the desired arrangement of scaffold and staple strands, the design is completed with the addition of the M13mp18 strand, which allows caDNAno to determine the complementary staple strand sequences for optimal binding and folding. In this manner, we constructed our csDNA origami, the track on which our robot will move.
+                    </p>
+
+                    <p>
+                        Once the design is completed in caDNAno, the user may output all the sequences of the staple and scaffold strands. These sequences are then used when ordering strands, thereby allowing the user to eventually anneal and image their origami in a lab.
+                    </p>
+
+
+                <h2>OXDNA</h2>
                 <p>
-                    In order to facilitate the constant movement of the robot, it was necessary to construct two different track types. The track types differed solely in terms of the position of the feet and legs; track type #1 had a leg* and foot* respectively, while track type #2 had a foot* followed by a leg*. The tracks were laid out along the origami such that they constantly alternated. By having different arrangements of the legs and feet, the tracks allowed the robot to seamlessly transition between the two track types and continue its random walk without obstruction.
+                    While caDNAno allows the user to create their 3D DNA origami, it is often beneficial to be able to visualize the structure as it is intended to form on a 3D plane. Hence, we also employed the use of oxDNA, a modeling software for DNA nanotechnology. oxDNA requires users to input configuration and topology files from caDNAno, and can interpret them to produce simulations and 3D visualizations of the origami structure. In order to better visualize our csDNA, we decided to input it into oxDNA.
                 </p>
 
-                <h2>Motion of the Robot</h2>
+                <h2>Development</h2>
                 <p>
-                    The motion of the robot can be compared to that of a domino chain reaction; by pushing the top of one, the rest of the domino is compelled to follow. The diagram below represents the robot’s motion by demonstrating how it moves from one track type to another. Initially, foot #1 and the leg are bound to their complements, while foot #2 remains free. However, foot #2 begins to bind to its complement on the second track type, and the leg and foot #1 are compelled to follow. Essentially, by constantly having one foot of the robot unbound, we were able to allow the robot to constantly continue its random walk. The robot will be fully incapacitated once it reaches the goal strand, where all its feet and its leg will be bound to their respective complements, creating a stable complex.
-                </p>
-                <iframe class= "robotMotion" width="560" height="315" src="https://www.youtube.com/embed/sS9dMQnmG0Q?si=tyHY6i0xfqqhYGHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                <h2>Transporting Cargo</h2>
-                <p>
-                    As outlined earlier, the robot was designed with the purpose of transporting cargo across the DNA origami track. The cargo is a single-stranded DNA partitioned into four parts - the cargo identifier, an arm* complement, a hand* complement and a goal attacher*. The identifier allows the cargo to be recognized by the goal, while the arm* and hand* allow the cargo to be picked up by the robot. The goal attacher’s role is to bind the cargo to the goal strand. As the robot carries out its random walk, it meets the cargo along its path. The hand and the arm of the robot bind to their complements on the cargo, and the robot is now bound with cargo. The robot continues with its walk until it bumps into the designated cargo goal strand. Hence, the cargo’s hand*, arm* and identifier bind to the goal strand, indicating that the cargo has been deposited at the desired strand. The cargo is designed such that it has the capacity to carry molecules, augmenting its potential for use in drug delivery in medicine and other related fields. 
+                    Constructing our own cargo-sorting robot required constant development and tweaks to our initial design. Our chart below reflects the various iterations of our csDNA, each of which helped bring us to where we are today.
                 </p>
 
+                <div class = "image-container">
+                    <img src="image6.png" alt="DNA Structure">
+                    <div class = "image-caption">
+                        <p> <span class = "figure">Figure 5:</span> A flowchart representing the various iterations of our csDNA design throughout our process. Initially, our fiduciary markers were located at a 5nm distance apart from each other, which we increased fourfold to achieve clearer imaging. We also included 20nm grids in our imaging as a benchmark for the quality of the csDNA images. To limit aggregation between individual origami, we introduced polyTs and a loop cover. Image made in BioRender.</p>
+                    </div>
+                </div>
+
+               <!-- <iframe class= "robotMotion" width="560" height="315" src="https://www.youtube.com/embed/sS9dMQnmG0Q?si=tyHY6i0xfqqhYGHv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+
+                <h2>Motion</h2>
+                <p>
+                    The DNA robot itself was a single-stranded DNA of length 53 nucleotides, segmented into 6 sections. From base to top, the robot had a docking strand, foot #1, a leg, foot #2, an arm, and a hand. Each section consisted of a distinct DNA sequence to ensure highly targeted binding when the robot encountered strands complementary to its own “body parts”. Through the creation of unique parts, each with a specific purpose, we were able to ensure that the robot could carry out tasks in the desired manner. For instance, the leg and feet of the robot facilitated its movement, while the arm and hand provided a mechanism for the robot to pick up and drop cargo. In this manner, the entirety of the robot served crucial roles in the process of sorting cargo.
+                </p>
+
+                <div class = "image-container">
+                    <img src="image7.png" alt="DNA Structure">
+                    <div class = "image-caption">
+                        <p> <span class = "figure">Figure 6:</span> Schematic of the structure of the robot. The robot itself is a single-stranded DNA. It consists of five different sections, thus permitting it to have a wide range of capabilities, including motion and picking up cargo. The sequence of the robot is designed specifically to be able to bind to the track types, as well as pick up the cargo strands. Image made in BioRender.</p>
+                    </div>
+                </div>
+
+                <p>
+                    Prior to the addition of the robot to the system, the robot was inhibited to the start staple. This was necessary to confirm that only one robot would bind to a given origami track, thus preventing the binding of multiple robots on a single origami. The inhibitor strand possessed a hand, arm, and a foot complement, thereby binding to relevant parts of the robot. On the addition of a trigger strand, complementary to the inhibitor, into the system, the inhibitor dissociated to the trigger, thus permitting the robot to begin its motion along the track.
+                </p>
+
+                <div class = "image-container">
+                    <img src="image8.png" alt="DNA Structure">
+                    <div class = "image-caption">
+                        <p> <span class = "figure">Figure 7:</span> Schematic of the structure of the robot. The robot itself is a single-stranded DNA. It consists of five different sections, thus permitting it to have a wide range of capabilities, including motion and picking up cargo. The sequence of the robot is designed specifically to be able to bind to the track types, as well as pick up the cargo strands. Image made in BioRender.</p>
+                    </div>
+                </div>
+
+                <p>
+                    In order to facilitate the constant movement of the robot, it was necessary to construct two different track types. The track types differed solely in terms of the position of the feet and legs; track type #1 had a leg* and foot*, respectively, while track type #2 had a foot* followed by a leg*. The tracks were laid out along the origami such that they constantly alternated. By having different arrangements of the legs and feet, the tracks allowed the robot to seamlessly transition between the two track types and continue its random walk without obstruction.
+                </p>
+
+                <div class = "image-container">
+                    <img src="image9.png" alt="DNA Structure">
+                    <div class = "image-caption">
+                        <p> <span class = "figure">Figure 8:</span> a Map of the track upon which the robot traverses. The robot begins its random walk at the start staple and continuously travels along the two track types until reaching its goal destination. b Each track type has a leg complementary to the robot. They each have one foot, yet the two feet correspond to different ones on the robot. By designing the track types this way, we could ensure the robot would never be stationary at one point for an extended period of time. Image made in BioRender.</p>
+                    </div>
+                </div>
+
+                <p>
+                    The motion of the robot can be compared to that of a domino chain reaction; by pushing the top of one, the rest of the domino is compelled to follow. The diagram above represents the robot’s motion by demonstrating how it moves from one track type to another. Initially, foot #1 and the leg are bound to their complements, while foot #2 remains free. However, foot #2 begins to bind to its complement on the second track type, and the leg and foot #1 are compelled to follow. Essentially, by constantly having one foot of the robot unbound, we were able to allow the robot to constantly continue its random walk. The robot will be fully incapacitated once it reaches the goal strand, where all its feet and its leg will be bound to their respective complements, creating a stable complex.
+                </p>
+
+                <div class = "image-container">
+                    <img src="image10.png" alt="DNA Structure">
+                    <div class = "image-caption">
+                        <p> <span class = "figure">Figure 9:</span> Diagram showing how the robot transitions between the two different track types. Initially, the robot is bound to track type one, with its leg and foot 1 bound to their complements. Foot 2 begins to bind to its complement on the second track type, and the rest of the robot is compelled to follow. In this manner, the robot continuously switches between the two track types, continuing its random walk. Image made in BioRender.</p>
+                    </div>
+                </div>
+
+                <p>
+                    As outlined earlier, the robot was designed with the purpose of transporting cargo across the DNA origami track. The cargo is a single-stranded DNA partitioned into four parts - the cargo identifier, an arm* complement, a hand* complement, and a goal attacher*. The identifier allows the cargo to be recognized by the goal, while the arm* and hand* allow the cargo to be picked up by the robot. The goal attacher’s role is to bind the cargo to the goal strand. When the robot meets cargo during its random walk, the hand and the arm of the robot bind to their complements on the cargo, and the robot is now bound with cargo. The robot continues with its walk until it bumps into the designated cargo goal strand. Hence, the cargo’s hand*, arm*, and identifier bind to the goal strand, indicating that the cargo has been deposited at the desired strand. The cargo is designed such that it has the capacity to carry molecules, augmenting its potential for use in drug delivery in medicine and other related fields.
+                </p>
+
+                <div class = "image-container">
+                    <img src="image11.png" alt="DNA Structure">
+                    <div class = "image-caption">
+                        <p> <span class = "figure">Figure 10:</span> Diagram showing the mechanism by which the robot picks up cargo. While the robot remains bound to one of the two track types, its arm and hand begin to bind to that of the cargo. Thus, the single-stranded cargo is bound to the robot. The robot continues with its random walk until it can deliver the cargo to the goal strand, which has a complement to the cargo identifier as well. Image made in BioRender.</p>
+                    </div>
+                </div>
+                
             </div>
 
         </section>

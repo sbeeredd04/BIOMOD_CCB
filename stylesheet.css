@@ -200,9 +200,9 @@ body {
     padding: 50px 10%;
 }
 
-.Background h3 {
+.project h2 {
     color: #bbb0ff;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -238,6 +238,12 @@ body {
 }
 
 /*project details title at the center of the page*/
+.project-title h1 {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 64px;
+    color:#bbb0ff;
+}
 .project-title h1 {
     margin-top: 200px;
     text-align: center;
@@ -345,15 +351,15 @@ body {
 
 .cube-loader .cube-wrapper {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 25px;
+    height:25px;
     transform-style: preserve-3d;
 }
 
 .cube-loader .cube-wrapper .cube-span {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 25px;
+    height: 25px;
     transform: rotateY(calc(90deg * var(--i))) translateZ(12.5px); /* Adjusted translateZ value */
     background: linear-gradient(to bottom, #130d30, #6141df 20%);
 }
@@ -654,3 +660,4 @@ body {
     line-height: 28px;
     margin-bottom: 30px;
 }
+
