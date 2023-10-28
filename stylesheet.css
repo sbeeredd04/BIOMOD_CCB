@@ -46,7 +46,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     cursor: default;
-    /* Removed opacity and animation properties */
 }
 
 .logo span {
@@ -62,7 +61,6 @@ body {
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
-    /* Removed opacity and animation properties */
 }
 
 .navbar a:hover {
@@ -77,7 +75,12 @@ body {
     flex-direction: column; /* Place rows on top of each other */
     align-items: center;
     justify-content: center;
-    padding: 70px 10% 0;
+    padding: 50px 10% ;
+}
+.home .container {
+
+    background: #000;
+    border-radius: 10px; /* Add rounded corners for the container */
 }
 
 /* Styling for the home content row */
@@ -91,8 +94,10 @@ body {
     padding: 0 10%;
 }
 
+/*placing items in the center of the page*/
 .content { 
     padding: 50px 10%;
+    margin: 20px 0;
 }
 
 /* Styling for the home content text */
@@ -658,4 +663,75 @@ li {
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 30px;
+}
+
+.video { 
+    /* placing video at the center of the page */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 40px;
+    width: 100%;
+}
+
+button {
+    padding: 0.8em 1.8em;
+    margin-top: 1.2em;
+    border: 2px solid #6141df;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #6141df;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #6141df;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+   
+.references {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.references h2 {
+    color: #bbb0ff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.references p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom:10px;
+}
+
+.home .content h1 {
+    color: #bbb0ff; /* Heading color */
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
