@@ -44,7 +44,7 @@
     </header>
 
     <div class = "results-title">
-        <h1>Results</h1>
+        <h1>Results & Analysis</h1>
     </div>
 
     <div class = "container">
@@ -52,44 +52,139 @@
             <div class="results-content">
                 <div class = "CsDna Versions">
                     <h1>
-                        Cargo Sorting DNA Robot Versions
+                        Introduction
                     </h1>
                     <p>
-                        The following are the different versions of our cargo sorting DNA robot.
+                        In order to produce high-quality images of our csDNA and robot, we had to go through several iterations of origami. We initially had to manage aggregation of our csDNA, prompting us to add polyTs and a loop cover. We then increased the distance between the fiduciary markers from 5 nm to 20 nm. Finally, we incorporated the robot into the csDNA as well. Below, we describe the experiments that allowed us to reach this point.                    
                     </p>
+
                     <div class = "version-1">
                         <h2>
-                            Version 1
+                            Addition of Poly-T's & Loop Cover
                         </h2>
-                        <p> For our first version of CsDna we chose 5nm distance for the fiduciary markers and these are the results we found. Although we were able to see the origami form there were several concerns 1 the origami were aggregating together and second the paint wasn't clear because the fiduciary marker were closer which caused the pain to show clumps</p>
+
+                        <p>
+                            Our initial experiments were of csDNA without polyTs or the loop cover. We wanted to determine how well our csDNA was forming under standard conditions. Below are AFM images of our csDNA.
+                        </p>
+
+                        <div class = "image-container">
+                            <img src="image14.png" alt="DNA Structure">
+                            <div class = "image-caption">
+                                <p> <span class = "figure">Figure 1:</span>  On the left is an AFM image of our initial csDNA. Large aggregates of the origami are clearly visible, indicating that they were binding to each other. As a result, we decided to add polyTs on the ends of the origami, along with a loop cover. On the right is csDNA after adding new strands. There is no aggregation present.</p>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class = "version-2">
                         <h2>
-                            Version 2
+                            20 Nanometer Grid
                         </h2>
-                        <p> For our second version of CsDna we chose to add poly T to solve the problem of aggregation. but the clumping problem was yet to be solved this took use to our next version version 3</p>
+
+                        <p>
+                            After verifying that our csDNA was forming under the AFM microscope we decided to turn our attention to DNA-PAINT. In order to test how successful our DNA-PAINT was, we first imaged 20nm grids, a 4x3 grid of fiduciary markers. Once we could optimize DNA-PAINT imaging, we could then begin imaging our csDNA with the same protocol. Below are images of our DNA-PAINT for the 20nm grid.
+                        </p>
+
+                        <div class = "image-container">
+                            <img src="image15.png" alt="DNA Structure">
+                            <div class = "image-caption">
+                                <p> <span class = "figure">Figure 2:</span>DNA-PAINT image of our 4x3 20nm grids. Each fiduciary marker is visible, and there is minimal overlap between each marker.</p>
+                            </div>
+                        </div>
+
+                        <p>
+                            After achieving clear and consistent images of the 20nm grids, we began to image csDNA with DNA-PAINT.
+                        </p>
+
                     </div>
 
                     <div class = "version-3">
                         <h2>
-                            Version 3
+                            5 Nanometer CSDNA
                         </h2>
-                        <p> For our third version of CsDna we chose to have 10nm distance. Although the image was better this time it wasn't good enough compared to our 20nm paint hence we decided to change the distance from 10 to 20nm for our next version</p>
+
+                        <p>
+                            Our initial csDNA design had 5 nm distances between all the fiduciary markers. While these images verified that our csDNA was compatible with DNA-PAINT, it was impossible to distinguish between the fiduciary markers due to the small distance between the individual markers. The significant overlap between the markers prompted us to increase the distance four-fold to 20 nm.
+                        </p>
+
+                        <div class = "image-container">
+                            <img src="image16.png" alt="DNA Structure">
+                            <div class = "image-caption">
+                                <p> <span class = "figure">Figure 3:</span>DNA-PAINT image of csDNA with 5nm distance between fiduciary markers. There is significant overlap between the fiduciary markers, making it very difficult to distinguish between them.</p>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class = "version-4">
                         <h2>
-                            Version 4
+                            20 Nanometer CSDNA
                         </h2>
-                        <p> For our fourth version of CsDna we chose to have 20nm distance. This was the best version we had so far. The paint was clear and the origami were not aggregating together. But we still have to figure our robot as there was a blur inside the origami because the robot weren't inhibhited pre-annealing </p>
+
+                        <p>
+                            The changes made to the 5nm csDNA brought us to our current arrangement of fiduciary markers - 7 fiduciary markers with 20+ nm between each one.
+                        </p>
+
+                        <div class = "image-container">
+                            <img src="image17.png" alt="DNA Structure">
+                            <div class = "image-caption">
+                                <p> <span class = "figure">Figure 4:</span>csDNA with 20nm distance between fiduciary markers. There are no fiduciary markers on the bottom of the origami in order to be able to distinguish the orientation of the origami.</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class = "version-5">
                         <h2>
-                            Version 5
+                            CSDNA with Robot
                         </h2>
-                        <p></p> 
+
+                        <p>
+                            The next step was incorporating the robot into our current csDNA. To do so, we annealed the robot separately and purified it with AMICON purification. We then added that to the csDNA at a 1:1 ratio and annealed the mix. With this method, we were able to see robots binding to the csDNA at high rates. Below is an image of our csDNA with robots, as well as the statistics for the number of robots binding to the track.
+                        </p>
+
+                        <div class = "image-container">
+                            <img src="image18.png" alt="DNA Structure">
+                            <div class = "image-caption">
+                                <p> <span class = "figure">Figure 5:</span> a DNA-PAINT of csDNA with robots. The robot has an individual docking strand, allowing us to determine where on the track it is located. b Pie chart of the number of robots bound to the origami in total. Data was based on a sample of approximately 200 origami. 38.5% of origami have robots clearly visible, while 30.5% were “ambiguous”, meaning that the robot was present but the fluorophore emission was less bright than the fiduciary markers. The remaining 31% of origami had no robots.</p>
+                            </div>
+                        </div>
+                        
+                        <p>
+                            The results that we have achieved so far are promising with regards to the continued development of the DNA robot. We hope to continue this project by capturing our robot in motion and then introducing cargo. Further exploration may include optimizing the robot algorithm, as well as introducing more robots onto a single origami. It is clear that the cargo-sorting robot has the potential to have applications in a variety of fields, from medicine to nanoelectronics.
+                        </p>
+
+                    </div>
+
+                    <div class = "version-6">
+
+                        <h2>
+                            Discussion
+                        </h2>
+
+                        <p>
+                            On a short-term scale, the DNA robot has proven to be capable of sorting various cargo. However, there is potential to further the applications of the robot in the future.
+                        </p>
+
+                        <p>
+                            While the current model allows for the robot to proceed in a random walk, further optimizing the algorithm for the robot’s motion could ensure that the cargo is sorted even faster than what has currently been achieved. Adjusting the sequences of track strands to lower the binding energy between the track and robot could allow for faster dissociation from the track, thus allowing for greater speed. Further, by changing the complementary nature of certain strands, it could be possible to prompt the robot to travel on a defined path, rather than continuing a random walk.
+                        </p>
+
+                        <p>
+                            In order to make the sorting of cargo more efficient, scaling up the number of robots could allow for a sort of swarm intelligence, similar to that of ants. Having robots working side-by-side could deliver cargo at higher rates. This may be used in the transportation of molecules, with potential use in chemical synthesis, or to rearrange circuit components on the nanoscale.
+                        </p>
+
+                        <div class = "image-container">
+                            <img src="image19.png" alt="DNA Structure">
+                            <div class = "image-caption">
+                                <p> <span class = "figure">Figure 6:</span> An example of “swarm intelligence”, demonstrated by the way in which ants carry out tasks as a whole. Although each individual ant, or robot, does not possess high intelligence, by coordinating their tasks, they are able to carry out their function with remarkable efficiency. Image made in BioRender.</p>
+                            </div>
+                        </div>
+
+                        <p>
+                            It is clear that beyond the promising potential medical applications of the cargo-sorting DNA robots, there is significant area for further study in the area. We hope to continue exploring these DNA robots and the novel ways in which they can be used.
+                        </p>
+                        
+                    </div>
             </div>
         </section>
 
