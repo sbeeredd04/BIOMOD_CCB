@@ -49,22 +49,83 @@
     <div class ="container">
         <section class="intro" id="intro">
             <div class="intro-content">
-                <h2>Welcome to Our DNA Robotics Journey</h2>
+                <h2>Background</h2>
                 <p>
-                    Since the advent of DNA origami in the 1980s, scientists have been pushing the limits of what we can achieve at the nanoscale. The use of DNA, given its well-known programmability and physical properties, has enabled us to pursue the creation of complex nano machines. DNA robots are one such machine, with the potential to carry out highly specific tasks. Our team has chosen to pursue the development of these robots, which we believe have the potential to _____________. Previous iterations of DNA robots have been designed with more limited functionality in terms of their movement and ability to carry out tasks. Our model has been developed with the aim of performing cargo sorting along with extended movement capabilities.
+                    The past few decades have seen varying approaches to the bottom-up construction of structures on the nanoscale. Constructing 3D nanostructures that have dynamic motion capabilities and the ability to carry out elementary tasks has the potential to bring about novel methods of drug delivery in the field of medicine. Yet in order to facilitate the bottom-up construction of such devices, identifying feasible components is necessary. For this reason, DNA has emerged as a basic unit in the construction of nanostructures, leading to the growth of a field termed “DNA nanotechnology.”
                 </p>
-                <h3>Rationale Behind Our Research</h3>
+
                 <p>
-                    The design and synthesis of molecular robots presents two critical challenges, those of modularity and algorithm simplicity, which have been transformative in other areas of molecular engineering. For example, simple and modular building blocks have been used for scaling up molecular information processing with DNA circuits. As in DNA circuits, simple building blocks for DNA robots could enable more complex nanomechanical tasks, whereas modularity could allow diverse new functions performed by robots using the same set of building blocks.
+                    The structure of DNA has been well-documented. The Watson-Crick model of DNA demonstrates the complementary base-pairing of nucleotides that allow for the formation of a double helix. These nucleotides, consisting of a nitrogenous base, sugar, and phosphate group, form hydrogen bonds among themselves. Adenine (A) will bind with Thymine (T), while Cytosine (C) binds to Guanine (G). 
                 </p>
-                <h3>Our Achievements</h3>
+
+                <div class = "image-container">
+                    <img src="image1.png" alt="DNA Structure">
+                    <div class = "image-caption">
+                        <p> <span class = "figure">Figure 1:</span> Complementary base pairing of DNA. Adenine forms two hydrogen bonds with Thymine, while Guanine forms three bonds with Cytosine. Applying this to DNA origami allows us to create 3D structures by synthesizing sequences of our choice. Image made in BioRender.</p>
+                    </div>
+                </div>
+                <h2>Problem</h2>
                 <p>
-                    We demonstrate a DNA robot that performs a nanomechanical task substantially more sophisticated than previous work. We developed a simple algorithm and three modular building blocks for a DNA robot that performs autonomous cargo sorting. The robot explores a two-dimensional testing ground on the surface of DNA origami, picks up multiple cargos of two types that are initially at unordered locations, and delivers each type to a specified destination until all cargo molecules are sorted into two distinct piles. The robot is designed to perform a random walk without any energy supply. Exploiting this feature, a single robot can repeatedly sort multiple cargos. Localization on DNA origami allows for distinct cargo-sorting tasks to take place simultaneously in one test tube or for multiple robots to collectively perform the same task.
+                    The human body can contract bacterial infections from a variety of external sources. These bacteria can rapidly proliferate throughout the body, causing a multitude of infections. While there has been a steady development of drugs and antibiotics to combat these infections, these conventional methods of drug delivery often fall short. These drugs often suffer from poor bioavailability, meaning the proportion of drugs that reach their target compared to those introduced into the body is low. Essentially, there are limitations to the specificity of these drugs in relation to their intended target. Further, given that these drugs are introduced to the entirety of the body, there may often be unintended side effects to other organs and tissues.
                 </p>
-                <h3>Conclusion and Future Prospects</h3>
+
                 <p>
-                    Using aptamers, antibodies, or direct conjugation, small chemicals, metal nanoparticles, and proteins could be transported as cargo molecules so that the cargo-sorting DNA robots could have potential applications in autonomous chemical synthesis, in manufacturing responsive molecular devices, and in programmable therapeutics. The building blocks developed in this work could also be used for diverse functions other than cargo sorting. For example, inspired by ant foraging, adding a new building block for leaving pheromone-like signals on a path, DNA robots could be programmed to find the shortest path and efficiently transport cargo molecules. With simple communication between the robots, they could perform even more sophisticated tasks. With more effort in developing modular and collective molecular robots, and with simple and systematic approaches, molecular robots could eventually be easily programmed like macroscopic robots, but working in microscopic environments.
+                    In order to approach this issue, it is vital to consider these drawbacks. A more targeted method of drug delivery would ideally have greater specificity, therefore ensuring that the drug of choice would reach its target area while limiting harm to other areas of the body. Such a solution would have to be more controllable in terms of the manner in which the drug is delivered to its target site. Therefore, we propose cargo-sorting DNA robots with the potential to overcome the aforementioned drawbacks of conventional drug delivery.
                 </p>
+
+                <h2>Our Solution</h2>
+                <p>
+                    Our cargo-sorting robot is designed to sort cargo on a DNA origami track and deliver it to a predetermined goal. Through the use of DNA origami, we were able to design these structures on the nanoscale.
+                </p>
+
+                <p>
+                    Our DNA robot begins at a start strand on the origami track. It then traverses a track consisting of alternating track types in a random walk. Upon walking into cargo placed on points along the track, it picks it up and then proceeds with its random walk until reaching a goal strand for the cargo. In this manner, it is capable of sorting varying types of cargo along a 12-hour timescale. 
+                </p>
+
+                <p>
+                    We believe that this robot could have potential in targeted drug delivery. By designing our goal strand to have aptamers complementary to the surface of bacteria, we could enable our origami to bind to harmful bacteria. Our DNA robot could then carry “cargo”, or the drug of choice to fight the bacteria, to the goal strand. While the possibility of using the cargo-sorting robot in drug delivery remains a relatively unexplored area, it is clear that there is potential for growth in this area.
+                </p>
+
+                <h2>Goals of the Project</h2>
+                <p>
+                    To approach the development of the DNA robot, we had to set several goals to ensure our continued progress. Thus, we decided on the following goals:
+                </p>
+
+                <!-- adding not changable checklist -->
+                <div class = "checklist">
+                    <div class="checkbox-container">
+                        <input name="chkBox_1" type="checkbox" checked disabled value="1" />
+                        <label for="chkBox_1">Understand the structure and manner in which the robot works from previous papers</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input name="chkBox_2" type="checkbox" checked disabled value="1" />
+                        <label for="chkBox_2">Design the origami in caDNAno</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input name="chkBox_3" type="checkbox" checked disabled value="1" />
+                        <label for="chkBox_3">Optimize imaging of 20nm grids with DNA-PAINT</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input name="chkBox_4" type="checkbox" checked disabled value="1" />
+                        <label for="chkBox_4">Achieve reliable imaging of our origami track with DNA-PAINT</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input name="chkBox_5" type="checkbox" checked disabled value="1" />
+                        <label for "chkBox_5">Image robots bound to the origami track at high rates</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input name="chkBox_6" type="checkbox" value="1" />
+                        <label for="chkBox_6">Capture images of the robot in motion</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input name="chkBox_7" type="checkbox" value="1" />
+                        <label for="chkBox_7">Introduce cargo onto the origami track</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input name="chkBox_8" type="checkbox" value="1" />
+                        <label for="chkBox_8">Verify that the cargo is reaching the desired destination</label>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

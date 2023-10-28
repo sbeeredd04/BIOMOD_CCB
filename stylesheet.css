@@ -84,11 +84,15 @@ body {
 .home-content {
     width: 100%;
     display: flex;
-    flex-direction: row; /* Place elements side by side */
+    flex-direction: column; /* Place elements side by side */
     justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 0 10%;
+}
+
+.content { 
+    padding: 50px 10%;
 }
 
 /* Styling for the home content text */
@@ -120,14 +124,7 @@ body {
     font-size: 30px;
 }
 
-/* Styling for the image container row */
-.container3D {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
+
 
 .home-image {
     max-width: 100%;
@@ -143,7 +140,7 @@ body {
 }
 
 .intro-content {
-    padding: 10px 10%;
+    padding: 50px 10%;
 }
 
 .intro-content h2 {
@@ -162,7 +159,7 @@ body {
 }
 
 .intro-content p {
-    color: #bbb0ff;
+    color: #fff;
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 30px;
@@ -434,7 +431,7 @@ body {
   .flow-protocol h1,
   .imaging-protocol h1, 
   .introduction-content-1 h1, 
-  .synthesis-content h1{
+  .synthesis-content h1,{
     color: #bbb0ff;
     font-size: 24px;
     font-weight: 540px;
@@ -452,7 +449,7 @@ body {
   .imaging-protocol p,
   .flow-protocol ul,
   .introduction-content-1 p, 
-  .synthesis-content p{
+  .synthesis-content p, .content{
     color: #fff;
     font-size: 18px;
     line-height: 28px;
@@ -625,3 +622,35 @@ body {
     color: #fff; /* Text color for table headers */
   }
   
+  .figure { 
+    /* bold text for Figure 1 */
+    font-weight: bold;
+  }
+
+  .image-container {
+    /*placing image at the center of the page with image caption below the image*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .image-caption {
+    /* italic text for image caption */
+    font-style: italic;
+    margin-top: 20px;
+    /*content in the center with the image*/
+    text-align: center;
+  }
+
+  .checkbox-container {
+    margin: 2rem;
+}
+
+/*styling for checkbox label */
+.checkbox-container label {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
